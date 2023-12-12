@@ -1,0 +1,34 @@
+{
+  "name": "type-graphql-demo",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "TypeGraphQL Project",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "start": "npm run tsc && node ./dist/server.js",
+    "dev": "nodemon src/server.ts",
+    "dev:dist": "nodemon dist/server.js",
+    "build": "tsc",
+    "build:watch": "tsc -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.10.4",
+    "nodemon": "^3.0.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.9.5",
+    "class-validator": "^0.14.0",
+    "express": "^4.18.2",
+    "graphql": "^16.8.1",
+    "graphql-scalars": "^1.22.4",
+    "reflect-metadata": "^0.1.14",
+    "ts-node": "^10.9.2",
+    "type-graphql": "^1.1.1"
+  }
+}

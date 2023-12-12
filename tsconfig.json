@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "lib": ["es2020"],
+    "target": "ES2021",
+    "module": "esnext",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": false, // Set to false to enable emitting output
+    "strictNullChecks": true,
+    "noImplicitAny": false,
+    "baseUrl": ".",
+    "paths": {
+      "*": ["src/*"]
+    },
+    "outDir": "./dist" // Specify the output directory
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
+}
