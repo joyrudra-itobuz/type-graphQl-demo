@@ -2,7 +2,7 @@
   "compilerOptions": {
     "lib": ["es2020"],
     "target": "ES2021",
-    "module": "esnext",
+    "module": "CommonJS",
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
@@ -18,8 +18,10 @@
     "paths": {
       "*": ["src/*"]
     },
-    "outDir": "./dist" // Specify the output directory
+    "outDir": "./dist",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true // Specify the output directory
   },
-  "include": ["src/**/*.ts"],
+  "include": ["src/**/*.ts", ".env.development"],
   "exclude": ["node_modules"]
 }
